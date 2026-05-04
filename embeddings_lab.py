@@ -200,7 +200,7 @@ if __name__ == "__main__":
             texts, queries, tfidf_sim, glove, model, tokenizer
         )
         if comparison:
-            for q in list(comparison.keys())[:2]:
+            for q in comparison.keys():
                 print(f"\nQuery: {q[:80]}...")
                 for method in ["tfidf", "glove", "bert"]:
                     top = comparison[q].get(method, [])
